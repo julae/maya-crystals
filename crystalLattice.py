@@ -4,6 +4,7 @@ import math;
 
 # ball and stick models for cubic crystal lattices
 
+# helper functions for simple cubic base of other lattices
 # generates spheres at sc lattice points in for loops
 def scBalls(x, y, z, radiusBall, latticeConst):
         xCoord = x*latticeConst
@@ -38,7 +39,10 @@ def scSticks(x, y, z, dimX, dimY, dimZ, radiusStick, latticeConst):
         cmds.setAttr(str(nameStickZ)+'.translate', xCoord, yCoord, zCoord + 0.5*latticeConst)
 
 
+
 # simple cubic lattice
+# dimX, dimY, dimZ are the number of unit cells in the given direction, latticeConst sets the lattice constant
+# bool stick determines, if the model is constructed with sticks connecting the lattice points.
 def scLattice( dimX = 1, dimY = 1, dimZ = 1, radiusBall = 0.1, radiusStick = 0.02, latticeConst = 1.0, sticks = True ):
     
     for x in xrange (0, dimX + 1):

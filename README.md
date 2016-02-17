@@ -1,6 +1,6 @@
 # maya-crystals
 
-Functions to generate ball and stick models of crystal lattices in Autodesk Maya. 
+Python Script with functions to generate ball and stick models of crystal lattices in Autodesk Maya. 
 This display of the connections inbetween lattice atoms is optional.
 
 For simple cubic (sc),
